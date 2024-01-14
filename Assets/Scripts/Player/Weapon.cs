@@ -1,7 +1,7 @@
-using UnityEngine;
 using Base;
 using Level;
 using Shop;
+using UnityEngine;
 
 namespace Player
 {

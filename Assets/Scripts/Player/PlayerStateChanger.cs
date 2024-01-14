@@ -1,6 +1,6 @@
-using UnityEngine;
-using Level;
 using CameraController;
+using Level;
+using UnityEngine;
 
 namespace Player
 {

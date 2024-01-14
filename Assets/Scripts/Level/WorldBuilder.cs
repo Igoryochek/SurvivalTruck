@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using Base;
-using UnityEngine;
+using System.Collections.Generic;
 using Truck;
+using UnityEngine;
 
 namespace Level
 {

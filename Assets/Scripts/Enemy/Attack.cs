@@ -1,5 +1,5 @@
-using Truck;
 using Player;
+using Truck;
 using UnityEngine;
 
 namespace Enemy
@@ -17,6 +17,7 @@ namespace Enemy
             _zombie = animator.gameObject.GetComponent<Zombie>();
             _zombieAttacker = animator.gameObject.GetComponent<ZombieAttacker>();
         }
+
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             _target = _zombie.GetTarget();

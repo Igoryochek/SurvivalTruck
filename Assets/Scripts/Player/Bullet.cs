@@ -1,6 +1,6 @@
+using Base;
 using System.Collections;
 using UnityEngine;
-using Base;
 
 namespace Player
 {

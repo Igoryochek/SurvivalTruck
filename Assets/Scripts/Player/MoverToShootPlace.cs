@@ -1,6 +1,6 @@
-using UnityEngine;
-using Truck;
 using Base;
+using Truck;
+using UnityEngine;
 
 namespace Player
 {
@@ -51,7 +51,8 @@ namespace Player
 
         private void RotateToTarget()
         {
-            if (transform.eulerAngles.y >= _targetRotation - _rotateInaccuracy && transform.eulerAngles.y <= _targetRotation + _rotateInaccuracy)
+            if (transform.eulerAngles.y >= _targetRotation - _rotateInaccuracy &&
+                transform.eulerAngles.y <= _targetRotation + _rotateInaccuracy)
             {
                 transform.localRotation = Quaternion.Euler(GlobalValues.Zero, _targetRotation, GlobalValues.Zero);
                 _rotatedToTarget = true;

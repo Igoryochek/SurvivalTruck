@@ -1,7 +1,7 @@
-using System;
 using Base;
 using Level;
 using Shop;
+using System;
 using UnityEngine;
 
 namespace Truck

@@ -1,6 +1,6 @@
+using Base;
 using System.Collections;
 using System.Collections.Generic;
-using Base;
 using UnityEngine;
 
 namespace Truck

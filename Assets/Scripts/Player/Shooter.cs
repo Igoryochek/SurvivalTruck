@@ -1,6 +1,6 @@
-using System.Collections;
 using Base;
 using Enemy;
+using System.Collections;
 using UnityEngine;
 
 namespace Player

@@ -1,13 +1,13 @@
+using Base;
+using Enemy;
+using Level;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Truck;
 using UnityEngine;
 using UI;
-using Truck;
-using Enemy;
 using YandexSDK;
-using Level;
-using Base;
 
 namespace Shop
 {

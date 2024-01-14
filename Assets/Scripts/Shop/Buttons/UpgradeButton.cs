@@ -21,6 +21,7 @@ namespace Shop
         public event Action SkillUpgraded;
 
         public int MaxValue => _maxValue;
+
         protected CoinCounter CoinCounter => _coins;
 
 

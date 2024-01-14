@@ -1,8 +1,8 @@
-using System.Collections;
 using Base;
-using UnityEngine;
-using TMPro;
 using Shop;
+using System.Collections;
+using TMPro;
+using UnityEngine;
 
 namespace UI
 {
@@ -42,7 +42,6 @@ namespace UI
 
         private IEnumerator ShowingCount()
         {
-
             while (_currentCount != _trueCount)
             {
                 if (_currentCount > _trueCount)

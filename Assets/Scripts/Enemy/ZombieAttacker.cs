@@ -1,9 +1,9 @@
+using Base;
+using Level;
+using Player;
+using Truck;
 using System;
 using System.Collections;
-using Base;
-using Truck;
-using Player;
-using Level;
 using UnityEngine;
 
 namespace Enemy
