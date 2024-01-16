@@ -1,5 +1,5 @@
-using Base;
 using System.Collections;
+using Base;
 using UnityEngine;
 
 namespace Player

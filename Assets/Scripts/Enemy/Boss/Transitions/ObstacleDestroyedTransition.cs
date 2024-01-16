@@ -1,9 +1,10 @@
-using UnityEngine;
+using Base;
 using Truck;
+using UnityEngine;
 
 namespace Enemy
 {
-    public class ObstacleDestroyedTransition : BossTransition
+    public class ObstacleDestroyedTransition : Transition
     {
         [SerializeField] private Obstacle _obstacle;
 

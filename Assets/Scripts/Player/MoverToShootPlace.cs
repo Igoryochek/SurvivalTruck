@@ -32,7 +32,10 @@ namespace Player
 
         private void FixedUpdate()
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, _shootPlace.transform.localPosition, _speed * Time.deltaTime);
+            transform.localPosition = Vector3.MoveTowards(
+                transform.localPosition,
+                _shootPlace.transform.localPosition,
+                _speed * Time.deltaTime);
             RotateToTarget();
         }
 
@@ -51,8 +54,7 @@ namespace Player
 
         private void RotateToTarget()
         {
-            if (transform.eulerAngles.y >= _targetRotation - _rotateInaccuracy &&
-                transform.eulerAngles.y <= _targetRotation + _rotateInaccuracy)
+            if (transform.eulerAngles.y >= _targetRotation - _rotateInaccuracy && transform.eulerAngles.y <= _targetRotation + _rotateInaccuracy)
             {
                 transform.localRotation = Quaternion.Euler(GlobalValues.Zero, _targetRotation, GlobalValues.Zero);
                 _rotatedToTarget = true;

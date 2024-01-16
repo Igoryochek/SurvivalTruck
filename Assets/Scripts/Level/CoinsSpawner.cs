@@ -19,7 +19,6 @@ namespace Level
                 zombie.GetComponent<Health>().Died += OnZombieDied;
             }
         }
-
         private void OnDisable()
         {
             foreach (var zombie in _zombiePooler.PooledObjects)

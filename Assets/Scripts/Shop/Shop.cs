@@ -1,6 +1,6 @@
+using System.Collections;
 using Level;
 using Player;
-using System.Collections;
 using UI;
 using UnityEngine;
 
@@ -44,7 +44,6 @@ namespace Shop
             _coverOpeningAnimator.SetTrigger(OpenTrigger);
             _coverOpeningSound.Play();
         }
-
         private void Close()
         {
             _coverOpeningAnimator.SetTrigger(CloseTrigger);

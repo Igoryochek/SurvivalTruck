@@ -1,9 +1,10 @@
-using UnityEngine;
+using Base;
 using Truck;
+using UnityEngine;
 
 namespace Enemy
 {
-    public class JumpingOnCarState : BossState
+    public class JumpingOnCarState : State
     {
         private const string JumpAnimationName = "Jump";
 
@@ -33,7 +34,10 @@ namespace Enemy
 
         private void FixedUpdate()
         {
-            Vector3 target = new Vector3(_target.transform.position.x, _target.transform.position.y - _yOffset, _target.transform.position.z - _zOffset);
+            Vector3 target = new Vector3(
+                _target.transform.position.x,
+                _target.transform.position.y - _yOffset,
+                _target.transform.position.z - _zOffset);
             Vector3 direction = (target - transform.position).normalized;
             transform.Translate(direction * _speed * Time.deltaTime);
         }

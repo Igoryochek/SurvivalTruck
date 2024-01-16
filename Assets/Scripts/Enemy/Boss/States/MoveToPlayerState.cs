@@ -1,11 +1,11 @@
-using UnityEngine;
 using Base;
 using Player;
 using UI;
+using UnityEngine;
 
 namespace Enemy
 {
-    public class MoveToPlayerState : BossState
+    public class MoveToPlayerState : State
     {
         [SerializeField] private PlayerHealth _target;
         [SerializeField] private float _speed;
@@ -22,7 +22,10 @@ namespace Enemy
 
         private void FixedUpdate()
         {
-            Vector3 direction = new Vector3(_target.transform.position.x - transform.position.x, 0, _target.transform.position.z - transform.position.z).normalized;
+            Vector3 direction = new Vector3(
+                _target.transform.position.x - transform.position.x,
+                GlobalValues.Zero,
+                _target.transform.position.z - transform.position.z).normalized;
             transform.Translate(direction * _speed * Time.deltaTime);
         }
     }

@@ -1,6 +1,6 @@
-using Base;
 using System.Collections;
 using System.Collections.Generic;
+using Base;
 using UnityEngine;
 
 namespace Truck
@@ -47,7 +47,9 @@ namespace Truck
             {
                 foreach (var woodPiece in _woodPieces)
                 {
-                    woodPiece.transform.localScale = Vector3.Lerp(woodPiece.transform.localScale, targetScale, timer * _decreacingSpeed * Time.deltaTime);
+                    woodPiece.transform.localScale = Vector3.Lerp(
+                        woodPiece.transform.localScale,
+                        targetScale, timer * _decreacingSpeed * Time.deltaTime);
                 }
 
                 timer += Time.deltaTime;

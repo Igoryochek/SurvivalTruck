@@ -1,9 +1,9 @@
+using System;
+using System.Collections;
 using Base;
 using Enemy;
 using Player;
 using Truck;
-using System;
-using System.Collections;
 using UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -38,7 +38,9 @@ namespace Level
         public event Action BossLevelEnded;
 
         public int BossLevelNumber => _bossLevelNumber;
+
         public bool IsWave => _isWave;
+
         public int CurrentLevelNumber { get; private set; } = 1;
 
         private void Awake()

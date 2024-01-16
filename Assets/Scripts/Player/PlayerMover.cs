@@ -38,7 +38,7 @@ namespace Player
                 _animator.SetBool(RunTrigger, true);
             }
         }
-        
+
         private void OnJoystickPulled()
         {
             if (_animator.GetBool(RunTrigger))

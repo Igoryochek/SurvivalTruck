@@ -1,7 +1,7 @@
+using System;
 using Base;
 using Level;
 using Shop;
-using System;
 using UnityEngine;
 
 namespace Truck
@@ -31,6 +31,7 @@ namespace Truck
         public event Action BlocksRepaired;
 
         public int MaxHealth => _maxHealth;
+
         public bool IsDestroyed { get; private set; }
 
         private void OnEnable()

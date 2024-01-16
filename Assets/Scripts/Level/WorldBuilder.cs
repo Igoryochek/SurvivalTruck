@@ -1,5 +1,5 @@
-using Base;
 using System.Collections.Generic;
+using Base;
 using Truck;
 using UnityEngine;
 
@@ -40,7 +40,11 @@ namespace Level
 
         private void Update()
         {
-            if (_car.transform.position.z > (_spawnedPlatforms[_spawnedPlatforms.Count - GlobalValues.ListIndexCorrection].transform.position.z - _spawnPlatformCorrection))
+            float platformEndPosition =
+                _spawnedPlatforms[_spawnedPlatforms.Count - GlobalValues.ListIndexCorrection].transform.position.z -
+                _spawnPlatformCorrection;
+
+            if (_car.transform.position.z > platformEndPosition)
             {
                 SpawnPlatform();
             }

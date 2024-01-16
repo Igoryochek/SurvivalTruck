@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Enemy
+namespace Base
 {
-    public class BossState : MonoBehaviour
+    public class State : MonoBehaviour
     {
-        [SerializeField] private List<BossTransition> _transitions;
+        [SerializeField] private List<Transition> _transitions;
 
         public void Enter()
         {
@@ -33,7 +33,7 @@ namespace Enemy
             }
         }
 
-        public BossState GetNextState()
+        public State GetNextState()
         {
             foreach (var transition in _transitions)
             {

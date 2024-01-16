@@ -24,7 +24,6 @@ namespace Level
 
             gameObject.SetActive(false);
         }
-
         public void MoveTarget(Transform target)
         {
             _moving = StartCoroutine(Moving(target));

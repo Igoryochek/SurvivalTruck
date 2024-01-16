@@ -1,7 +1,7 @@
 using System;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
-using UI;
 
 namespace Shop
 {

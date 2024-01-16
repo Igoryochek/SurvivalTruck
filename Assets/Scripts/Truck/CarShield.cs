@@ -1,8 +1,8 @@
+using System;
+using System.Collections;
 using Base;
 using Enemy;
 using Shop;
-using System;
-using System.Collections;
 using UnityEngine;
 
 namespace Truck

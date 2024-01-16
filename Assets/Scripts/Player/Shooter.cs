@@ -1,6 +1,6 @@
+using System.Collections;
 using Base;
 using Enemy;
-using System.Collections;
 using UnityEngine;
 
 namespace Player
@@ -17,6 +17,7 @@ namespace Player
         private bool _isShooting = false;
 
         public ZombieHealth Target => _currentTarget;
+
         public bool IsShooting => _isShooting;
 
         private void Update()

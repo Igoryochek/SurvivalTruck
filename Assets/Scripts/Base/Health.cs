@@ -9,18 +9,21 @@ namespace Base
         public const string DieTrigger = "Die";
         private const float DyingDelayTime = 2f;
 
-        protected int AddHealthMultiplier = 0;
-
         [SerializeField] private int _startHealth;
         [SerializeField] private int _additionalHealth;
         [SerializeField] private ColorChanger _colorChanger;
 
+
+        protected int AddHealthMultiplier = 0;
+
         private int _currentHealth;
         private Animator _animator;
         private Coroutine _dying;
+
         private WaitForSeconds _dyingDelay = new WaitForSeconds(DyingDelayTime);
 
         public event Action<float> HealthChanged;
+
         public event Action<Health> Died;
 
         public bool IsDead { get; private set; } = false;
@@ -49,14 +52,15 @@ namespace Base
                 _currentHealth -= count;
                 ChangeHealthStatus();
 
-                if (_currentHealth > GlobalValues.Zero)
+                if (_currentHealth <= GlobalValues.Zero)
+                {
+                    _currentHealth = GlobalValues.Zero;
+                    Die();
+                }
+                else
                 {
                     _colorChanger.ChangeToDamageColor();
-                    return;
                 }
-
-                _currentHealth = GlobalValues.Zero;
-                Die();
             }
         }
 
