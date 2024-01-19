@@ -26,8 +26,11 @@ namespace Truck
         private bool _lowerBlockDestroyed;
 
         public event Action UpperBlockDestroyed;
+
         public event Action MiddleBlockDestroyed;
+
         public event Action LowerBlockDestroyed;
+
         public event Action BlocksRepaired;
 
         public int MaxHealth => _maxHealth;
@@ -38,8 +41,8 @@ namespace Truck
         {
             _repairZone.Repaired += OnRepaired;
             _levelChanger.Changed += OnLevelChanged;
-            _waveController.WaveEnded += OnWaveEnded;
-            _obstacleHealthUpgradeButton.HealthUpgraded += OnHealthUpgraded;
+            _waveController.Ended += OnWaveEnded;
+            _obstacleHealthUpgradeButton.SkillUpgraded += OnHealthUpgraded;
         }
 
         private void Start()
@@ -51,8 +54,8 @@ namespace Truck
         {
             _repairZone.Repaired -= OnRepaired;
             _levelChanger.Changed -= OnLevelChanged;
-            _waveController.WaveEnded -= OnWaveEnded;
-            _obstacleHealthUpgradeButton.HealthUpgraded -= OnHealthUpgraded;
+            _waveController.Ended -= OnWaveEnded;
+            _obstacleHealthUpgradeButton.SkillUpgraded -= OnHealthUpgraded;
         }
 
         public void ApplyDamade(int damage)

@@ -6,14 +6,25 @@ namespace Base
     {
         [SerializeField] protected float StartSpeed;
         [SerializeField] protected float Speed;
+        [SerializeField] private float _rotationSpeed;
+        [SerializeField] private Health _health;
 
         protected Rigidbody Rigidbody;
-
-        [SerializeField] private float _rotationSpeed;
 
         private void Awake()
         {
             Rigidbody = GetComponent<Rigidbody>();
+        }
+
+        protected virtual void OnEnable()
+        {
+            SetStartSpeed();
+            _health.Died += OnDied;
+        }
+
+        protected virtual void OnDisable()
+        {
+            _health.Died -= OnDied;            
         }
 
         public void Rotate(Vector3 destination)
@@ -30,14 +41,19 @@ namespace Base
             transform.rotation = Quaternion.Lerp(transform.rotation, newDirection, _rotationSpeed * Time.deltaTime);
         }
 
-        public void SetZeroSpeed()
+        private void SetZeroSpeed()
         {
             Speed = GlobalValues.Zero;
         }
 
-        public void SetStartSpeed()
+        private void SetStartSpeed()
         {
             Speed = StartSpeed;
+        }
+
+        private void OnDied(Health health)
+        {
+            SetZeroSpeed();
         }
     }
 }

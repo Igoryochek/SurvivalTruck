@@ -376,17 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e81f242728ebef48b73cdfbeaf7aa35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &132900330 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3646710111718898528, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
-  m_PrefabInstance: {fileID: 9150028078246563362}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3f59fa998c387d4c9149e04966d84d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &139791906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6713452647987657236, guid: 45328d14678a0d04eb19d7bf2f2ac166, type: 3}
@@ -899,6 +888,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb7ae5c1ea1898a469f1d3845b1ca425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &774244481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9079629119895354863, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
+  m_PrefabInstance: {fileID: 3685216000199233681}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e296d7b4397b74a4ea1f3783644e8c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &793779765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8548581239404562766, guid: 76ed9a61c026d834fbebde319eef8ed4, type: 3}
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd0f5897055a81644b7984b976a53ec6, type: 3}
+  m_Script: {fileID: 11500000, guid: a0cc741248aeca74bbb71a51acf69ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1162344128 stripped
@@ -4082,6 +4082,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141238641388746954, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
+      propertyPath: _levelChanger
+      value: 
+      objectReference: {fileID: 1593400594}
     - target: {fileID: 2153554977252664704, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
       propertyPath: _kangarooDamageUpgradeButton
       value: 
@@ -4190,6 +4194,14 @@ PrefabInstance:
       propertyPath: _upgradePanel
       value: 
       objectReference: {fileID: 110423820}
+    - target: {fileID: 4384946124858251706, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
+      propertyPath: _wave
+      value: 
+      objectReference: {fileID: 1972587206}
+    - target: {fileID: 4384946124858251706, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
+      propertyPath: _levelChanger
+      value: 
+      objectReference: {fileID: 1593400594}
     - target: {fileID: 4793271105869172608, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
       propertyPath: _levelChanger
       value: 
@@ -4198,10 +4210,6 @@ PrefabInstance:
       propertyPath: _levelChanger
       value: 
       objectReference: {fileID: 1593400594}
-    - target: {fileID: 4889376646357463882, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
-      propertyPath: _bossLevelHealthBar
-      value: 
-      objectReference: {fileID: 132900330}
     - target: {fileID: 4889376646357463882, guid: 61fe60f7cb5bb2b44955ed4a2dd2a55e, type: 3}
       propertyPath: _playerHealthUpgradeButton
       value: 
@@ -4571,6 +4579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaveController
       objectReference: {fileID: 0}
+    - target: {fileID: 9018624723100345358, guid: 41657af294688d54b9ce64a3681470f1, type: 3}
+      propertyPath: _boss
+      value: 
+      objectReference: {fileID: 8758378300194660580}
     - target: {fileID: 9018624723100345358, guid: 41657af294688d54b9ce64a3681470f1, type: 3}
       propertyPath: _bossSpawner
       value: 
@@ -5890,6 +5902,14 @@ PrefabInstance:
       propertyPath: _leaderboardDataChanger
       value: 
       objectReference: {fileID: 3763780157703378511}
+    - target: {fileID: 3636816581183898760, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _levelChanger
+      value: 
+      objectReference: {fileID: 1593400594}
+    - target: {fileID: 3636816581183898760, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _normalLevelHealthBar
+      value: 
+      objectReference: {fileID: 774244481}
     - target: {fileID: 3646710111718898528, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
       propertyPath: _health
       value: 
@@ -5926,6 +5946,18 @@ PrefabInstance:
       propertyPath: _kangaroo
       value: 
       objectReference: {fileID: 404730993}
+    - target: {fileID: 4958215408334909654, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _carShield
+      value: 
+      objectReference: {fileID: 404730993}
+    - target: {fileID: 5312344083765858568, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _wave
+      value: 
+      objectReference: {fileID: 1972587206}
+    - target: {fileID: 6882139790830743671, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _levelChanger
+      value: 
+      objectReference: {fileID: 1593400594}
     - target: {fileID: 8224473251056355274, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
       propertyPath: _coins
       value: 
@@ -5938,10 +5970,18 @@ PrefabInstance:
       propertyPath: _weapon
       value: 
       objectReference: {fileID: 747748197}
+    - target: {fileID: 8452661621217869450, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _playerHealth
+      value: 
+      objectReference: {fileID: 8141956493425255387}
     - target: {fileID: 8931753863240528794, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
       propertyPath: _levelChanger
       value: 
       objectReference: {fileID: 1593400594}
+    - target: {fileID: 9150028077419321833, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
+      propertyPath: _buttons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1031018728}
     - target: {fileID: 9150028078573007035, guid: 3d942422052694b4fa009e0a9141e9f3, type: 3}
       propertyPath: m_Name
       value: Canvas

@@ -34,6 +34,7 @@ namespace Shop
         private WaitForSeconds _removingDelay = new WaitForSeconds(RemovingDelayTime);
 
         public event Action<int> CoinsAmountChanged;
+
         public event Action VideoBonusAdded;
 
         public int Count => _count;
@@ -57,7 +58,7 @@ namespace Shop
         {
             _levelChanger.Changed += OnLevelChanged;
             _boss.Died += OnBossDied;
-            _coinsModifierUpgradeButton.CoinsModifierUpgraded += OnCoinsModifierUpgraded;
+            _coinsModifierUpgradeButton.SkillUpgraded += OnCoinsModifierUpgraded;
             _adShower.VideoAdShowed += OnVideoAdShowed;
             _addCoinsButton.Clicked += OnAddCoinsButtonClicked;
             _kangaroo.ZombieHited += OnZombieAttacked;
@@ -72,7 +73,7 @@ namespace Shop
         {
             _levelChanger.Changed -= OnLevelChanged;
             _boss.Died -= OnBossDied;
-            _coinsModifierUpgradeButton.CoinsModifierUpgraded -= OnCoinsModifierUpgraded;
+            _coinsModifierUpgradeButton.SkillUpgraded -= OnCoinsModifierUpgraded;
             _adShower.VideoAdShowed -= OnVideoAdShowed;
             _addCoinsButton.Clicked -= OnAddCoinsButtonClicked;
             _kangaroo.ZombieHited -= OnZombieAttacked;
